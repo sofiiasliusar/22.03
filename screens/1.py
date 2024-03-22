@@ -12,23 +12,21 @@ class FirstScreen(Screen):
         
         btn1 = Button(text = "Go to SECOND SCREEN!")
         btn1.on_press = self.go_to_second
-        self.add_widget(btn1)
         layout.add_widget(btn1)
         
         btn2 = Button(text = "Go to THIRD SCREEN!")
         btn2.on_press = self.go_to_third
-        self.add_widget(btn2)
         layout.add_widget(btn2)
         
         btn3 = Button(text = "Go to FOURTH SCREEN!")
         btn3.on_press = self.go_to_fourth
-        self.add_widget(btn3)
         layout.add_widget(btn3)
         
         btn4 = Button(text = "Go to FIFTH SCREEN!")
         btn4.on_press = self.go_to_fifth
-        self.add_widget(btn4)
         layout.add_widget(btn4)
+
+        self.add_widget(layout)
           
     def go_to_second(self):
         self.manager.transition.direction = "up"
